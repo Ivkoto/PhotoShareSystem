@@ -16,7 +16,11 @@
             {
                 case "RegisterUser":
                     RegisterUserCommand registerUser = new RegisterUserCommand();
-                    result = registerUser.Execute(commandParameters);                
+                    result = registerUser.Execute(commandParameters);
+                    break;
+                case "Exit":
+                    ExitCommand exit = new ExitCommand();
+                    exit.Execute();
                     break;
             }
 
