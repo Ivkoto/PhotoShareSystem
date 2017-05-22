@@ -3,6 +3,7 @@
     using System;
     using System.Linq;
     using Commands;
+    using Services;
 
     public class CommandDispatcher
     {
@@ -15,7 +16,7 @@
             switch (commandName)
             {
                 case "RegisterUser":
-                    RegisterUserCommand registerUser = new RegisterUserCommand();
+                    RegisterUserCommand registerUser = new RegisterUserCommand(new UserService());
                     result = registerUser.Execute(commandParameters);
                     break;
                 case "Exit":

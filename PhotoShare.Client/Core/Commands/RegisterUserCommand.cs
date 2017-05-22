@@ -3,9 +3,17 @@
     using System;
     using System.Linq;
     using Models;
+    using Services;
 
     public class RegisterUserCommand
     {
+        private readonly UserService service;
+
+        public RegisterUserCommand(UserService service)
+        {
+            this.service = service;
+        }
+
         // RegisterUser <username> <password> <repeat-password> <email>
         public string Execute(string[] data)
         {
@@ -19,29 +27,9 @@
                 throw new ArgumentException("Passwords do not match!");
             }
 
-            User user = new User
-            {
-                Username = username,
-                Password = password,
-                Email = email,
-                IsDeleted = false,
-                RegisteredOn = DateTime.Now,
-                LastTimeLoggedIn = DateTime.Now
-            };
+            this.service.AddUser(username, password, email);
 
-            using (PhotoShareContext context = new PhotoShareContext())
-            {
-                //start my changes
-                if (context.Users.Any(u => u.Username == user.Username))
-                {
-                    throw new InvalidOperationException("Username" + user.Username + "is already taken!");
-                }
-                //end my changes
-                context.Users.Add(user);
-                context.SaveChanges();
-            }
-
-            return "User " + user.Username + " was registered successfully!";
+            return "User " + username + " was registered successfully!";
         }
     }
 }
