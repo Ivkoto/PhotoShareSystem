@@ -1,8 +1,8 @@
-namespace PhotoShare.Client
+namespace PhotoShare.Data
 {
     using System.Data.Entity;
     using Models;
-    using PhotoShare.Client.Migrations;
+    using PhotoShare.Data.Migrations;
 
     public class PhotoShareContext : DbContext
     { 

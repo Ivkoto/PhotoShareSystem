@@ -67,7 +67,6 @@
     <Compile Include="Core\Commands\ShareAlbumCommand.cs" />
     <Compile Include="Core\Commands\UploadPictureCommand.cs" />
     <Compile Include="Core\Engine.cs" />
-    <Compile Include="PhotoShareContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\TagUtilities.cs" />
   </ItemGroup>
