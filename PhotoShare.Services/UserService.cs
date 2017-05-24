@@ -1,6 +1,6 @@
 ﻿namespace PhotoShare.Services
 {
-    using PhotoShare.Client;
+    using PhotoShare.Data;
     using PhotoShare.Models;
     using System;
     using System.Linq;

@@ -78,6 +78,14 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PhotoShare.Data\PhotoShare.Data.csproj">
+      <Project>{439629f2-2c98-4357-ac8e-3b4a52f1d9a9}</Project>
+      <Name>PhotoShare.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotoShare.Models\PhotoShare.Models.csproj">
+      <Project>{1F36AF83-9C71-4A06-9345-2E1F9350EC6D}</Project>
+      <Name>PhotoShare.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PhotoShare.Services\PhotoShare.Services.csproj">
       <Project>{5a397d13-7cb2-4336-a8e4-0bee55d61b9c}</Project>
       <Name>PhotoShare.Services</Name>
