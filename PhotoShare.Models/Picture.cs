@@ -27,7 +27,7 @@
 
         public override string ToString()
         {
-            return $"{this.Title} {this.Caption??string.Empty}";
+            return $"{this.Title} {this.Caption ?? string.Empty}";
         }
     }
 }

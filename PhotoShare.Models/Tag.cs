@@ -1,8 +1,7 @@
 ﻿namespace PhotoShare.Models
 {
-    using System.Collections.Generic;
-
     using PhotoShare.Models.Validation;
+    using System.Collections.Generic;
 
     public class Tag
     {

@@ -1,8 +1,9 @@
 ﻿namespace PhotoShare.Client.Core.Commands
 {
-    using System;
     using Models;
+    using System;
     using System.Linq;
+
     public class AddTownCommand
     {
         // AddTown <townName> <countryName>

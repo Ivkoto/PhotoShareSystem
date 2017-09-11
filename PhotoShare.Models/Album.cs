@@ -42,7 +42,7 @@
             get { return this.tags; }
             set { this.tags = value; }
         }
-        
+
         public override string ToString()
         {
             return $"{this.Name} has {this.Pictures.Count} pictures";

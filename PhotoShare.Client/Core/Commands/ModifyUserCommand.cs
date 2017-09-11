@@ -1,7 +1,5 @@
 ﻿namespace PhotoShare.Client.Core.Commands
 {
-    using System;
-
     public class ModifyUserCommand
     {
         // ModifyUser <username> <property> <new value>

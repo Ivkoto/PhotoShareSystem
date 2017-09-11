@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class PrintFriendsListCommand 
+    public class PrintFriendsListCommand
     {
         // PrintFriendsList <username>
         public string Execute(string[] data)

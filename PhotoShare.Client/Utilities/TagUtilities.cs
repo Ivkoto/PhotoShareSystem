@@ -25,7 +25,7 @@
             }
 
             string transformedTag = wrongTag;
-            
+
             transformedTag = RemoveAllWhiteSpaces(transformedTag);
 
             if (wrongTag[0] != '#')

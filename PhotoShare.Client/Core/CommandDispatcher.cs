@@ -1,9 +1,8 @@
 ﻿namespace PhotoShare.Client.Core
 {
-    using System;
-    using System.Linq;
     using Commands;
     using Services;
+    using System.Linq;
 
     public class CommandDispatcher
     {
@@ -19,6 +18,7 @@
                     RegisterUserCommand registerUser = new RegisterUserCommand(new UserService());
                     result = registerUser.Execute(commandParameters);
                     break;
+
                 case "Exit":
                     ExitCommand exit = new ExitCommand();
                     exit.Execute();

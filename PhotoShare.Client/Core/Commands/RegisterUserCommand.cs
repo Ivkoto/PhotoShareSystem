@@ -1,9 +1,7 @@
 ﻿namespace PhotoShare.Client.Core.Commands
 {
-    using System;
-    using System.Linq;
-    using Models;
     using Services;
+    using System;
 
     public class RegisterUserCommand
     {

@@ -47,7 +47,7 @@
                 this.ProfilePicture
                     .ToList()
                     .ForEach(b => stream.WriteByte(b));
-                
+
                 return Image.FromStream(stream);
             }
         }

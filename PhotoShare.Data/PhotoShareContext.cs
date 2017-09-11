@@ -1,11 +1,11 @@
 namespace PhotoShare.Data
 {
-    using System.Data.Entity;
     using Models;
     using PhotoShare.Data.Migrations;
+    using System.Data.Entity;
 
     public class PhotoShareContext : DbContext
-    { 
+    {
         public PhotoShareContext() : base("name=PhotoShareContext")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<PhotoShareContext, Configuration>());
