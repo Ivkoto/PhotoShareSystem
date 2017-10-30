@@ -1,7 +1,7 @@
 ﻿namespace PhotoShare.Client.Core
 {
     using Commands;
-    using Services;
+    using PhotoShare.Services;
     using System.Linq;
 
     public class CommandDispatcher

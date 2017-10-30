@@ -1,5 +1,6 @@
 ﻿namespace PhotoShare.Client.Core.Commands
 {
+    using PhotoShare.Data;
     using System;
     using System.Linq;
 

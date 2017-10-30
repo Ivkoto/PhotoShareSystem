@@ -1,6 +1,6 @@
 ﻿namespace PhotoShare.Client.Core.Commands
 {
-    using Services;
+    using PhotoShare.Services;
     using System;
 
     public class RegisterUserCommand
